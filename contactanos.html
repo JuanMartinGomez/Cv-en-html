@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contactanos</title>
+</head>
+
+<body>
+
+    <div class="head">
+
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="contactanos.html">Contacto</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">Curriculum en Html</h2>
+        <p class="moreInfo">
+            Este proyecto fue diseñado para presentar en la materia de <br>
+            Programación Web I, de la Universidad Nacional del oeste <br>
+            el mismo solamente contiene un archivo HTML y un archivo Css.
+        </p>
+
+        <div class="btn-home">
+            <a href="index.html" class="btn">Saber mas</a>
+        </div>
+    </header>
+
+    <section class="contentContact sauContact">
+        <div>
+            <h2>Nombre</h2>
+            <input class="controls" type="text" name="nombre" minlenght="5" maxlength="10"
+                placeholder="Complete el nombre" required />
+            <br>
+            <h2>Teléfono</h2>
+            <br>
+            <input class="controls" type="tel" name="telephone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}"
+                title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits"
+                required />
+            <h2>Email</h2>
+            <input class="controls" type="email" name="direccionemail" placeholder="Ej.: usuario@servidor.com"
+                pattern=".+@[mM][aA][iI][lL][fF][oO][rR][aA][lL][lL][.][cC][oO][mM]" />
+            <br>
+            <textarea name="comment" cols="40" rows="5" minlength="20" maxlength="50"
+                required>Hola! Creo que estás completamente equivocado!</textarea>
+            <p> Por favor marque la casilla para poder enviar la consulta<br>
+                <input class="controls" type="checkbox" name="cb-terminosservicio" required /><br>
+            </p>
+            <div class="boton">
+                <a href="index.html" class="btn">Enviar consulta</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content contact">
+        <h2 href="contactanos.html" class="title">Contacto</h2>
+    </section>
+
+</body>
+
+</html>
